@@ -1,0 +1,5 @@
+Annotators=tokenize, ssplit, pos, lemma, ner
+NumberOfThreads=10
+ArticleJsonFilePath=data/article_dump.json
+HazelCastConfigFilePath=properties/hazelcast.xml
+Log4jPropertiesFilePath=properties/log4j.properties
