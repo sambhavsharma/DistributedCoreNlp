@@ -11,6 +11,7 @@ time taken to process that article, in terms of start time and end time. Followi
 =============================================================================================================================================
 
 What you need to know before running? 
+
 There are three config/properties files in the properties folder. Each file is briefly explained below:
 
 -> config
@@ -50,6 +51,7 @@ one node of the cluster crashes or leaves the cluster for some reason, no data i
 =============================================================================================================================================
 
 How to Run?
+
 This is a maven project and so will work like other maven projects. To build run the following command in root directory
   `mvn clean install` 
 
