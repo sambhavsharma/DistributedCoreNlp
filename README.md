@@ -38,7 +38,7 @@ This is a normal log4j properties file. Refer https://logging.apache.org/log4j/1
 
 This is HazelCast configuration file. You can configure network settings in this file: multicast, tcp, ssl etc.
 You can also configure discovery on EC2 instances within aws property of network settings.
-You can also configure all the HazelCast features like Distributed java.util.{Queue, Set, List, Map}, Distributed java.util.concurrency.locks.Lock, Distributed java.util.concurrent.ExecutorService and Distributed MultiMap for one to many mapping
+This includes configurations for all the HazelCast features like Distributed java.util.{Queue, Set, List, Map}, Distributed java.util.concurrency.locks.Lock, Distributed java.util.concurrent.ExecutorService and Distributed MultiMap for one to many mapping.
 
 For more info refer http://www.hazelcast.org/docs/latest/manual/html/
 
