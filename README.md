@@ -6,7 +6,7 @@ It reads articles from a json file(array of articles in JSON format) and perform
 and gives a log output with number of Named Entities in the article, an array of all the NERs in the article and 
 time taken to process that article, in terms of start time and end time. Following is a sample output:
 
-" Article ID : 1, StartTime : 03:46:10.530, EndTime : 03:46:25.419, ThreadID : 32, number of NERs = 2, NER : [2008, Bitcoin Foundation]"
+" Article ID : 1, Start Time : 03:46:10.530, End Time : 03:46:25.419, ThreadID : 32, number of NERs = 2, NER : [2008, Bitcoin Foundation]"
 
 =============================================================================================================================================
 
