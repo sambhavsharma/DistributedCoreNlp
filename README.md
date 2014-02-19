@@ -12,18 +12,24 @@ time taken to process that article, in terms of start time and end time. Followi
 
 What you need to know before running? 
 There are three config/properties files in the properties folder. Each file is briefly explained below:
-1. config
-This file has the following parameters
-  > Annotators : 
-  > NumberOfThreads : 
+
+-> config
+
+This file has following properties
+  > Annotators : Annotators given to be used on data
+  > NumberOfThreads : Each node processes articles in parallel by running these many threads in concurrent
   > ArticleJsonFilePath : Path to the json dump of articles file
   > HazelCastConfigFilePath : Path to HazelCast config file
   > Log4jPropertiesFilePath : Path to log4j properties file 
 
-2. log4j.properties
+
+-> log4j.properties
+
 This is a normal log4j properties file. Refer https://logging.apache.org/log4j/1.2/manual.html for more info.
 
-3. hazelcast.xml
+
+-> hazelcast.xml
+
 This is HazelCast configuration file. You can configure network settings in this file: multicast, tcp, ssl etc.
 You can also configure discovery on EC2 instances within aws property of network settings.
 You can also configure all the HazelCast features like Distributed java.util.{Queue, Set, List, Map}, Distributed java.util.concurrency.locks.Lock, Distributed java.util.concurrent.ExecutorService and Distributed MultiMap for one to many mapping
