@@ -154,7 +154,7 @@ public class ProcessArticles implements Callable<String> {
 		/*
 		 *	Article processing is finished, create a new logEntry and log it. 
 		 */
-		String logEntry = "Article ID : "+this.articleID+", StartTime : "+startTime+", EndTime : "+ new DateTime().toLocalTime()+", ThreadID : "+Thread.currentThread().getId()+", number of NERs = "+NERs.size() + ", NER : " + NERs.toString();
+		String logEntry = "Article ID : "+this.articleID+", Start Time : "+startTime+", End Time : "+ new DateTime().toLocalTime()+", ThreadID : "+Thread.currentThread().getId()+", number of NERs = "+NERs.size() + ", NER : " + NERs.toString();
 		log.debug(logEntry);
 
 		return null;
