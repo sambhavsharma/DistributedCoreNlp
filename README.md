@@ -68,4 +68,16 @@ Note: This may take some time if you're running for the first time as maven will
 The above command will create a runnable jar in the target folder, you can run it with the following command:
   `java -jar /path/to/jar` , additionaly you can specify JVM options for memory, as this takes up a lot of memory.
   
+Server
 
+The first time you run the project, i.e. if the node you start is the first node of the cluster, it will acquire an ArticleLoad lock and thus will act as a server. Only the server can load articles from the file to NonBlocking queue "articles". This quque is shared within the cluster. 
+
+
+Client
+
+If a node is not the first node in the cluster, that is it does not create a new cluster, instead joins an already cluster, it will automatically act as a worker/client. This node will not load articles in the queue, it will only poll articles from it and process them, and output the log after an article has been processed.
+
+Note:
+
+In the current version, every node will produce an output log file. In next commit, we can make every node to write the output to a shared concurrent datastructure, and then make Server write it to log files. Thus, there will be only one output log file generated, and that will be on the server.
+ 
