@@ -79,5 +79,7 @@ If a node is not the first node in the cluster, that is it does not create a new
 
 Note:
 
-In the current version, every node will produce an output log file. In next commit, we can make every node to write the output to a shared concurrent datastructure, and then make Server write it to log files. Thus, there will be only one output log file generated, and that will be on the server.
+1. In the current version, every node will produce an output log file. In next commit, we can make every node to write the output to a shared concurrent datastructure, and then make Server write it to log files. Thus, there will be only one output log file generated, and that will be on the server.
+
+2. We can also write separate server and worker classes and give the user ability to choose which node to start. The server will check if another server is running in the cluster, if it is, it will kill itself(in case we do not want more than one servers running in the cluster). In case a client starts and there is no server in the cluster, we can make it wait for a definite period of time and than make it kill itself. 
  
