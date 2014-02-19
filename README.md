@@ -17,10 +17,15 @@ There are three config/properties files in the properties folder. Each file is b
 -> config
 
 This file has following properties
+  
   > Annotators : Annotators given to be used on data
+  
   > NumberOfThreads : Each node processes articles in parallel by running these many threads in concurrent
+  
   > ArticleJsonFilePath : Path to the json dump of articles file
+  
   > HazelCastConfigFilePath : Path to HazelCast config file
+  
   > Log4jPropertiesFilePath : Path to log4j properties file 
 
 
