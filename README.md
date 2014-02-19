@@ -75,7 +75,7 @@ The first time you run the project, i.e. if the node you start is the first node
 
 Client
 
-If a node is not the first node in the cluster, that is it does not create a new cluster, instead joins an already cluster, it will automatically act as a worker/client. This node will not load articles in the queue, it will only poll articles from it and process them, and output the log after an article has been processed.
+If a node is not the first node in the cluster, that is it does not create a new cluster, instead joins an already running cluster, it will automatically act as a worker/client. This node will not load articles in the queue, it will only poll articles from it and process them, and output the log after an article has been processed.
 
 Note:
 
